@@ -1,5 +1,5 @@
 resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
-  name: 'ata2021_bicepdiskstorage'
+  name: 'ata2021bicepdiskstorage'
   location: 'uksouth'
   sku: {
     name: 'Standard_LRS'
