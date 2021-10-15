@@ -5,7 +5,7 @@ Set-AzContext $context
 Get-AzSubscription
 
 Set-AzDefault -ResourceGroupName ATA
-New-AzResourceGroupDeployment -TemplateFile main.bicep
+New-AzResourceGroupDeployment -TemplateFile main.bicep -ResourceGroupName ATA
 
 Get-AzResourceGroupDeployment -ResourceGroupName ATA | Format-Table
 
