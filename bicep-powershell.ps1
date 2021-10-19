@@ -13,5 +13,5 @@ az account list --refresh --query "[?contains(name, 'Pay-As-You-Go')].id" --outp
 az account set --subscription 19b3488b-1b19-4127-8f27-8cfb2b594615
 az configure --defaults group=ATA
 
-az deployment group create --template-file main.bicep
-az resource delete -g ATA -n ata2021bicepdiskstorage  --resource-type "Microsoft.Storage/storageAccount"
+az deployment group create --resource-group ATA --template-file main.bicep
+az resource delete -g ATA -n ata2021bicepdiskstorage  --resource-type "Microsoft.Storage/storageAccounts"
