@@ -10,7 +10,7 @@ Remove-AzResource -ResourceName ata2021bicepdiskstorage -ResourceGroupName ATA -
 az login
 az account set --subscription "Pay-As-You-Go"
 az account list --refresh --query "[?contains(name, 'Pay-As-You-Go')].id" --output table
-az account set --subscription 19b3488b-1b19-4127-8f27-8cfb2b594615
+az account set --subscription
 az configure --defaults group=ATA
 
 az deployment group create --resource-group ATA --template-file main.bicep
